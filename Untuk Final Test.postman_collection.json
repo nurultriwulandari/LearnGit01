@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "a94ac93c-b12f-4a3e-afe9-fe1decd35ab7",
+		"name": "Untuk Final Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21020405"
+	},
+	"item": [
+		{
+			"name": "eduwork",
+			"item": [
+				{
+					"name": "GET GOREST",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "231ff8749bdef4949c5135466b5d7b1efbad3f2c702f189c707461080448fa8b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/556166",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"556166"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST GOREST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "231ff8749bdef4949c5135466b5d7b1efbad3f2c702f189c707461080448fa8b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 555534,\r\n    \"name\": \"Nurul Triwulandari\",\r\n    \"email\": \"Nurul@Gmail.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT GOREST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "231ff8749bdef4949c5135466b5d7b1efbad3f2c702f189c707461080448fa8b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 556166,\r\n    \"name\": \"Nurul Triwulandari\",\r\n    \"email\": \"Nurul@Gmail.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/556166",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"556166"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE GOREST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "231ff8749bdef4949c5135466b5d7b1efbad3f2c702f189c707461080448fa8b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 556166,\r\n    \"name\": \"Nurul Triwulandari\",\r\n    \"email\": \"Nurul@Gmail.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/556166",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"556166"
+							]
+						},
+						"description": "Final Test mulai dari GET,POST,PUT dan DELETE"
+					},
+					"response": []
+				}
+			],
+			"description": "untuk final test"
+		}
+	]
+}
