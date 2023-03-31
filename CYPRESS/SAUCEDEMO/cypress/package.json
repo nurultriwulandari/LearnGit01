@@ -1,0 +1,26 @@
+{
+  "name": "educy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:tests": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "BDD",
+    "Cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "prettier": "^2.8.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
